@@ -36,7 +36,7 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your machine
 
    The application running on port 3000 by default.
 
-### Technologies Used 💻
+## Technologies Used 💻
 
 - Next.js: React framework for server-side rendering and routing.
 - TypeScript: Superset of JavaScript that adds static typing.
@@ -45,14 +45,14 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your machine
 - monday-sdk-js: SDK for integrating with the monday.com platform.
 - monday-ui-react-core: React UI Components Library provided by monday.com.
 
-### Functionality 🛠️
+## Functionality 🛠️
 
 - Search Bar: Allows users to input text to filter country information.
 - Filtered Results: Displays filtered country results and enables clicking.
 - Modal: Shows detailed country information and weather data upon clicking a result.
 - Error Handling: Implements basic error handling for smoother user experience.
 
-### Additional Notes ℹ️
+## Additional Notes ℹ️
 
 - Responsiveness: The UI is designed to be responsive across various screen sizes.
 - Clean Code: Emphasis is placed on writing clean, modular, and maintainable code.
