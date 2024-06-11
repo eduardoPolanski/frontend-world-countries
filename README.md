@@ -13,7 +13,7 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your machine
 1. Clone the repository from GitHub:
 
    ```bash
-   git clone <repository_url>
+   git clone git@github.com:eduardoPolanski/frontend-world-countries.git
    ```
 
 2. Navigate to the project directory:
