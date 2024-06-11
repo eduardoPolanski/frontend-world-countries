@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project Overview
+
+This project is a full-stack application aimed at creating a user interface (UI) within the monday.com platform to interact with board data. The front-end is developed using Next.js, TypeScript, and integrates monday.com's React UI Components Library. The UI allows users to search through country data stored on a monday.com board, display filtered results, and retrieve weather data for selected countries from a back-end API.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ensure you have Node.js and npm (Node Package Manager) installed on your machine.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository from GitHub:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone <repository_url>
+   ```
 
-## Learn More
+2. Navigate to the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cd frontend-world-countries
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install the dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+4. Start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   The application running on port 3000 by default.
+
+### Technologies Used
+
+- Next.js: React framework for server-side rendering and routing.
+- TypeScript: Superset of JavaScript that adds static typing.
+- Tailwind CSS: Utility-first CSS framework.
+- axios: HTTP client for making requests to the back-end API.
+- monday-sdk-js: SDK for integrating with the monday.com platform.
+- monday-ui-react-core: React UI Components Library provided by monday.com.
+
+### Functionality
+
+- Search Bar: Allows users to input text to filter country information.
+- Filtered Results: Displays filtered country results and enables clicking.
+- Modal: Shows detailed country information and weather data upon clicking a result.
+- Error Handling: Implements basic error handling for smoother user experience.
+
+### Additional Notes
+
+- Responsiveness: The UI is designed to be responsive across various screen sizes.
+- Clean Code: Emphasis is placed on writing clean, modular, and maintainable code.
+- UI Elements: Utilizes UI components from monday.com's React UI Components Library for consistency with the monday.com platform.
