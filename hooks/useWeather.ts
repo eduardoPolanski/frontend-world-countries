@@ -13,7 +13,7 @@ export const useWeather = (country: string | null) => {
         setLoading(true);
         setWeather(null);
         if (!country) {
-          return;
+          throw new Error("Country not found");
         }
         const { status, data } = await getWeatherByCountry(country);
         if (status !== 200) {

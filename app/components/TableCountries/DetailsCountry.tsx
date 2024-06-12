@@ -54,7 +54,7 @@ function DetailsCountry({
             <div className="flex flex-col lg:flex-row lg:gap-x-2 gap-y-4 my-4">
               <div id="current-weather" className="w-full flex flex-col">
                 {isError || !weatherData ? (
-                  <div className="flex justify-center items-center pt-4">
+                  <div className="flex justify-center items-center pt-4 min-h-max">
                     <Error title="Weather data" />
                   </div>
                 ) : (

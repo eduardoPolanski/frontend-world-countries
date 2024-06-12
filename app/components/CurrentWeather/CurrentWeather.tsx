@@ -1,27 +1,10 @@
 import { formattedDateTime } from "@/utils";
-import { ButtonGroup } from "monday-ui-react-core";
+import { ButtonGroup, Loader } from "monday-ui-react-core";
 import Image from "next/image";
 import React, { useState } from "react";
 import WeatherData from "../DataWeather/DataWeather";
 import { ResponseWeather } from "@/types/weather";
 import { SunIcon, ThermometerIcon, WindIcon } from "../Icons/Icons";
-
-interface WeatherCondition {
-  icon: string;
-}
-
-interface CurrentWeatherData {
-  condition: WeatherCondition;
-  is_day: number;
-  temp_c: number;
-  temp_f: number;
-}
-
-interface LocationData {
-  localtime: string;
-  name: string;
-  country: string;
-}
 
 interface CurrentWeatherProps {
   weatherData: ResponseWeather;
@@ -38,6 +21,7 @@ function CurrentWeather({ weatherData }: CurrentWeatherProps) {
   };
 
   const [metricType, setMetricType] = useState<"metric" | "imperial">("metric");
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <>
@@ -77,6 +61,11 @@ function CurrentWeather({ weatherData }: CurrentWeatherProps) {
             className="rounded-full"
             src={`https:${weatherData.current.condition.icon}`}
             alt="Weather Icon"
+            loader={({ src }) => {
+              <Loader size={40} />;
+              setIsLoading(false);
+              return src;
+            }}
           />
         </div>
 
